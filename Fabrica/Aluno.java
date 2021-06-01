@@ -11,28 +11,30 @@ public class Aluno
     protected double nota1;
     protected double nota2;
     
-    public static void main(String[] Alunos) {
-       
-       String Nome = aluno0 = "Gabriel";
+    
+    public Aluno()
+    {
+        
+       String Nome= aluno0;
        float aluno0 = 1234;
        
-       String Nome = aluno1 = "Ruth";
+       String Nome= aluno1;
        float aluno1 = 2121;
               
-       String Nome =  aluno2 = "Lucas";
+       String Nome =  aluno2;
        float aluno2 = 4321;
        
-       String Nome =  aluno3 = "Ester";
+       String Nome =  aluno3;
        float aluno3 = 1212;
        
-       String Nome = aluno4 = "Pedro";
+       String Nome = aluno4;
        float aluno4 = 2211;
        
-       System.out.println( aluno0 = "Gabriel");
-       System.out.println (aluno1 = "Ruth"); 
-       System.out.println (aluno2 = "Lucas");
-       System.out.println (aluno3 = "Ester");
-       System.out.println (aluno4 = "Pedro");
+       System.out.println (aluno0 = "Gabriel");
+       System.out.println (aluno1 == "Ruth"); 
+       System.out.println (aluno2 == "Lucas");
+       System.out.println (aluno3 == "Ester");
+       System.out.println (aluno4 == "Pedro");
        
     }
     
