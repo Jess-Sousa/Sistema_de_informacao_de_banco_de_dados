@@ -63,8 +63,62 @@ public class CarroExemploaula6 {
           break;
           
             }
+        }
             
-            
-            
-            }
+      // O método calibrarWhile está usando uma estrutura de repitição While 
+      public void calibrarWhile(int libras) {
+      //Enquanto a variável libras não for menor que 35 ele i?a apresentar a msg
+      while (libras < 35){
+            System.out.println("O pneu não está calibrado, "+libras+" libras");
+            libras++; // = libras = libras + 1
       }
+            System.out.println("O pneu está calibrado!!!");
+    }
+      // O metodo calibrarWhile está usando uma estrutura de repetição Do While
+      public void calibrarDoWhile(int libras){
+      //Enqnto a variavel libras não for menor que 35 ele irá apresentar a msg
+      do{
+         System.out.println("O pneu não está calibrado, pois está com "+libras+"libras");
+         libras++; 
+        } while(libras < 35 );
+         System.out.println("O pneu está calibrado!");
+        }
+        
+        public void modelosDeCarroArray() {
+            //[] - são inseridas em uma variável que referencia um array
+            String[] modelosA = new String[4];
+            modelosA[0] = "oi";
+            modelosA[1] = "Olá";
+            System.out.println("modelosA[0]");
+            System.out.println("modelosA[1]");
+
+            //Outra maneira de fazer uma declaração de array 
+            String[] modelosB;
+            modelosB = new String[4];
+            
+            //{} - inicializar valores em um array sua declaração
+            String[] modelosC = {"Gol", "Crossfox", "Uno", "Palio"};
+            
+            System.out.println(modelosC[0]);  
+        }
+    
+        //O método calibrarFor está usando uma estrutura de repetição FOR
+        public void calibrarFor(int libras) {
+        //Enqnto o i não for menor ou igual a 35 ele irá apresentar a msg:
+        for (int i = libras; i <= 35; i++){
+            System.out.println("O pneu não está calibrado, pois está com "+i+" libras");
+        }
+            System.out.println("O pneu está calibrado!");
+        }
+         /* OBSs: o i é uma variavel, se eu quiser colocar no texto deixo nessa forma:
+          * "+i+"
+          * O comando break; serve para sair de uma repetição
+          */   
+        
+            
+
+        }
+        
+
+     
+      
