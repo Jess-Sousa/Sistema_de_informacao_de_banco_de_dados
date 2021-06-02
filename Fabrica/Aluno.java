@@ -1,7 +1,4 @@
 package Fabrica;
-import javafx.scene.Node;
-
-
 
 public class Aluno
 {
