@@ -12,7 +12,7 @@ public class Aluno
     public Aluno()
     {
         
-       String Nome= aluno0;
+       /*String Nome= aluno0;
        float aluno0 = 1234;
        
        String Nome= aluno1;
@@ -32,7 +32,7 @@ public class Aluno
        System.out.println (aluno2 == "Lucas");
        System.out.println (aluno3 == "Ester");
        System.out.println (aluno4 == "Pedro");
-       
+       */
     }
     
     public void RetornoMediaDosAlunosArray() { int[][] aluno0 = new int [0][2];
@@ -54,9 +54,9 @@ public class Aluno
         aluno4 [4][0] = 7;
         aluno4 [4][1] = 8;
         
-    }
+    }}
         
-    public void String (int Nomedosalunos){
+    /*public void String (char NomeAluno){
         String[] Nomedosalunos; Aluno0 = "Gabriel"; Aluno1 = "Ruth";
         Aluno2 = "Lucas"; Aluno3 = "Ester"; Aluno4 ="Pedro"; 
     }//pra saber se ele passou ou nao vou usar o For
