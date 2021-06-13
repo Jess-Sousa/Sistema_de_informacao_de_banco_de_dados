@@ -1,21 +1,44 @@
 package TrabalhoPratico3;
 
 
-public class Quadrado implements FormasGeometricas
+public class  Quadrado  implements FormasGeometricas
 {
-    private int lados;
-
-    public Quadrado (int lados) {
-        lados quadrado = 4;
+    private int altura;
+    private int base;
+    private int lado;
+    private int calculoLados;
+    
+public Quadrado (int lado) {
+        this.lado= lado;
     }
     
-    public int calculoLados() {
+public int getLado() {
         return lado;
     }
     
-        public void setLados(int lados) {
-    this.lado = lado + lado + lado + lado;
-}
+public Quadrado (int altura, int base) {
+        this.altura = altura;
+        this.base = base;
+    }
+    
+public int getAltura() {
+        return altura;
+    }
+    
+public int getBase() {
+        return base;
+    }
+    
+public float calculoPerimetro() {
+        return 2 * (altura + base);
+    }
+    
+public float calculoArea() {
+        return altura * base;}
+
+public int calculoLado() {
+        return lado * 4;
+        }
 }
 
 /*3) Crie Classes para representar retângulos e quadrados. 

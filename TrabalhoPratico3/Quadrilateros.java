@@ -1,6 +1,8 @@
 package TrabalhoPratico3;
 
-public abstract class  Quadrilateros {
+public abstract class  Quadrilateros  {
+    private int altura;
+    private int base;
     private int calculoPerimetro;
     private int calculoLados;
     private int tamanholadosquadrado;
@@ -9,36 +11,40 @@ public abstract class  Quadrilateros {
     public Quadrilateros () {
     
     }
-    
-    public Quadrilateros (int tamanholadosquadrado, int tamanholadosretangulos)
-    {
-    tamanholadosquadrado = tq;
-    tamanholadosretangulo= tr;
-    
-    }
-    
-    public int getId () {
-        return id;
+
+    public int getTamanholadosquadrado () {
+        return tamanholadosquadrado = base + base+ altura +altura;
+        }
+        
+    public int getTamanholadosretangulo () {
+        return tamanholadosretangulo = base + base + altura +altura;
         }
     
-    public void setId ( String id) {
-         this.id = id; 
+    public void setTamanholadosquadrado (int tamanholadosquadrado) {
+         this.tamanholadosquadrado = tamanholadosquadrado;
          }
-
-    public static void main (String [] args) {
-
-    FormasGeometricas fg = new Retangulo(6, 10);
-
-    System.out.println("Perímetro do retângulo: " + fg.calculoPerimetro());
-    System.out.println("Área do retângulo: " + fg.calculoArea());
+         
+    public void setTamanholadosretangulo (int tamanholadosretangulo) {
+         this.tamanholadosretangulo = tamanholadosretangulo;
+         }
+         
+    public Quadrilateros (int altura, int base) {
+        this.altura = altura;
+        this.base = base;
+        }
     
+    public int getAltura() {
+        return altura;
+        }
     
-    fg = new Quadrado (4);
-    System.out.println("Perímetro do quadrado: " + fg.calculoPerimetro());
-    System.out.println("Área do quadrado: " + fg.calculoArea());
-    System.out.println("Soma dos lados do quadrado: " + fg.calculoLados());
-
-}
+    public int getBase() {
+        return base;
+        }   
+        
+    public float calculoPerimetro() {
+        return 2 * (altura + base);
+        }
+    
 }
 
 /*2) Crie uma classe abstrata para representar quadriláteros. 
