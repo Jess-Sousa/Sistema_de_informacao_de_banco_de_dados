@@ -1,9 +1,10 @@
 package TrabalhoPratico3;
 
 public interface FormasGeometricas {
-    public float calculoPerimetro();
-    public float calculoArea();
+    public double calculoPerimetro();
+    public double calculoArea();
     }
+    
 /*
 Objetivo: Praticar conceitos de OO (Herança, Classes Abstratas, Interfaces e Polimorfismo ) 
 

@@ -1,6 +1,6 @@
 package TrabalhoPratico3;
 
-public class Retangulo implements FormasGeometricas {
+public class Retangulo extends Quadrilateros implements FormasGeometricas {
     private int altura;
     private int base;
 
@@ -9,7 +9,15 @@ public class Retangulo implements FormasGeometricas {
         this.base = base;
     }
     
-    public int getAltura() {
+    public void setaltura (int altura){
+    this.altura = altura;
+    }
+    
+    public void setbase (int base){
+    this.base = base;
+    }
+    
+    public int getaltura() {
         return altura;
     }
     
@@ -17,11 +25,11 @@ public class Retangulo implements FormasGeometricas {
         return base;
     }
     
-    public float calculoPerimetro() {
+    public double calculoPerimetro() {
         return 2 * (altura + base);
     }
     
-    public float calculoArea() {
+    public double calculoArea() {
         return altura * base;
     }
 }

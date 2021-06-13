@@ -1,16 +1,21 @@
 package TrabalhoPratico3;
 
 
-public class  Quadrado  implements FormasGeometricas
+public class  Quadrado extends Quadrilateros implements FormasGeometricas
 {
+    private int lado;
     private int altura;
     private int base;
-    private int lado;
-    private int calculoLados;
+    private double calculoLados;
+    private int tamanholadosquadrado;
+
     
 public Quadrado (int lado) {
         this.lado= lado;
     }
+    
+public void setlado (int lado){
+        this.lado = lado;}
     
 public int getLado() {
         return lado;
@@ -21,7 +26,15 @@ public Quadrado (int altura, int base) {
         this.base = base;
     }
     
-public int getAltura() {
+public void setaltura (int altura){
+    this.altura = altura;
+    }
+    
+public void setbase (int base){
+    this.base = base;
+    }
+    
+public int getaltura() {
         return altura;
     }
     
@@ -29,16 +42,21 @@ public int getBase() {
         return base;
     }
     
-public float calculoPerimetro() {
+public double calculoPerimetro() {
         return 2 * (altura + base);
     }
     
-public float calculoArea() {
+public double calculoArea() {
         return altura * base;}
 
-public int calculoLado() {
-        return lado * 4;
+public void setTamanholadosquadrado (int tamanholadosquadrado) {
+         this.tamanholadosquadrado = tamanholadosquadrado;
+         }
+
+public int getTamanholadosquadrado () {
+        return tamanholadosquadrado = base + base+ altura +altura;
         }
+        //ta faltando calcular a soma dos lados
 }
 
 /*3) Crie Classes para representar retângulos e quadrados. 

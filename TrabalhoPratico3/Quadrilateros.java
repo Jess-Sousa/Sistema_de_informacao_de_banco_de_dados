@@ -1,10 +1,11 @@
 package TrabalhoPratico3;
 
-public abstract class  Quadrilateros  {
+public abstract class  Quadrilateros {
     private int altura;
     private int base;
-    private int calculoPerimetro;
-    private int calculoLados;
+    private int lado;
+    private double calculoPerimetro;
+    private double calculoLados;
     private int tamanholadosquadrado;
     private int tamanholadosretangulo;
     
@@ -33,6 +34,14 @@ public abstract class  Quadrilateros  {
         this.base = base;
         }
     
+    public void setAltura (int altura){
+    this.altura = altura;
+        }
+    
+    public void setbase (int base){
+    this.base = base;
+        }
+        
     public int getAltura() {
         return altura;
         }
@@ -40,8 +49,12 @@ public abstract class  Quadrilateros  {
     public int getBase() {
         return base;
         }   
+       
+    public double calculoLados() {
+        return lado + lado + lado + lado;
+        }
         
-    public float calculoPerimetro() {
+    public double calculoPerimetro() {
         return 2 * (altura + base);
         }
     
