@@ -2,8 +2,10 @@ package TrabalhoPratico3;
 
 public class Circulo implements FormasGeometricas {
     public static float PI = 3.14f;
-    
     private int raio;
+    
+    public Circulo(int raio, float PI){
+    }
     
     public Circulo () {
     raio = 1;
