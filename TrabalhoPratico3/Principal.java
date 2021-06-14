@@ -1,9 +1,8 @@
 package TrabalhoPratico3;
 
 
-public class teste
+public class Principal
 {
-       public int tamanholadosquadrado;
 
 public static void main (String [] args) {
 
@@ -23,7 +22,7 @@ public static void main (String [] args) {
     System.out.println("Área do quadrado: " +quadrado.calculoArea());
     
     Circulo circulo = new Circulo();
-    System.out.println("Tamanho do raio no circulo: " + circulo.calculoTamanholados());
+    System.out.println("Tamanho do raio no circulo: " + circulo.Tamanhoraio());
     System.out.println("Perímetro do círculo: " + circulo.calculoPerimetro());
     System.out.println("Área do círculo: " + circulo.calculoArea());
 

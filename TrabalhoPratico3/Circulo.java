@@ -11,7 +11,7 @@ public class Circulo implements FormasGeometricas {
     raio = 1;
     }
     
-    public double calculoTamanholados() {
+    public double Tamanhoraio() {
         return raio;
     }
     

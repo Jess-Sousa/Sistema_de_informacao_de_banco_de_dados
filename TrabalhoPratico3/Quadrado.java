@@ -4,11 +4,11 @@ package TrabalhoPratico3;
 public class  Quadrado extends Quadrilateros implements FormasGeometricas
 {
     private int lado;
-    private double calculoTamanholados;
+    private double Tamanholados;
     private int altura;
     private int base;
 
-public Quadrado (int lado,double calculoTamanholados){
+public Quadrado (int lado,double Tamanholados){
 }  
     
 public void setlado (int lado){
