@@ -1,8 +1,8 @@
 package TrabalhoPratico3;
 
 public interface FormasGeometricas {
-    public double calculoPerimetro();
-    public double calculoArea();
+     double calculoPerimetro();
+     double calculoArea();
     }
     
 /*

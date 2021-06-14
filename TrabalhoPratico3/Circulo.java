@@ -1,7 +1,7 @@
 package TrabalhoPratico3;
 
 public class Circulo implements FormasGeometricas {
-    public static float PI = 3.1416f;
+    public static float PI = 3.14f;
     
     private int raio;
     
@@ -9,11 +9,7 @@ public class Circulo implements FormasGeometricas {
     raio = 1;
     }
     
-    public Circulo(int raio) {
-        this.raio = raio;
-    }
-    
-    public int calculoRaio() {
+    public double calculoTamanholados() {
         return raio;
     }
     
@@ -24,7 +20,7 @@ public class Circulo implements FormasGeometricas {
     public double calculoArea() {
         return Circulo.PI * raio * raio;
     }
-//ta faltando fazer sobrecarga e o construtor do tamanho do raio
+//ta faltando fazer sobrecarga 
 }
 
 /*4) Crie uma classe para representar um círculo. 
