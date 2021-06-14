@@ -3,10 +3,25 @@ package TrabalhoPratico3;
 public class Retangulo extends Quadrilateros implements FormasGeometricas {
     private int altura;
     private int base;
-
-    public Retangulo(int altura, int base) {
-        this.altura = altura;
-        this.base = base;
+    private int Tamanhoaltura;
+    private int Tamanhobase;
+    
+    public Retangulo(int Tamanhoaltura, int Tamanhobase) {
+        this.Tamanhoaltura = Tamanhoaltura;
+        this.Tamanhobase = Tamanhobase;
+    }
+    
+    public Retangulo () {
+    Tamanhoaltura = 10;
+    Tamanhobase = 5;
+    }
+    
+    public double Tamanhoaltura() {
+        return altura;
+    }
+    
+    public double Tamanhobase() {
+        return base;
     }
     
     public void setaltura (int altura){

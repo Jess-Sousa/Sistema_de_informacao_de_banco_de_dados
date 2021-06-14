@@ -3,8 +3,17 @@ package TrabalhoPratico3;
 public class Circulo implements FormasGeometricas {
     public static float PI = 3.14f;
     private int raio;
+    private double Tamanhoraio;
     
     public Circulo(int raio, float PI){
+    this.raio = raio;
+    this.PI = PI;
+    }
+    
+    public Circulo(int raio, float PI,double Tamanhoraio){
+    this.raio = raio;
+    this.PI = PI;
+    this.Tamanhoraio = Tamanhoraio;
     }
     
     public Circulo () {
@@ -22,7 +31,6 @@ public class Circulo implements FormasGeometricas {
     public double calculoArea() {
         return Circulo.PI * raio * raio;
     }
-//ta faltando fazer sobrecarga 
 }
 
 /*4) Crie uma classe para representar um círculo. 

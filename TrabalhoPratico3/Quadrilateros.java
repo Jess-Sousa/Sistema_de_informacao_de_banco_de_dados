@@ -5,10 +5,10 @@ public abstract class  Quadrilateros {
     private int base;
     private int lado;
     private double calculoPerimetro;
-    private double calculoTamanholados;
+    private double Tamanholados;
       
-    public double calculoTamanholados() {
-        return lado * 4;
+    public double Tamanholados() {
+        return lado;
         }
         
     public double calculoPerimetro() {

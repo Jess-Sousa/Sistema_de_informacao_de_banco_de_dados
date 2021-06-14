@@ -7,7 +7,11 @@ public class Principal
 public static void main (String [] args) {
 
     Retangulo  retangulo = new Retangulo(10,5);
+    retangulo.setaltura(10);
+    retangulo.setbase(5);
     
+    System.out.println("Tamanho da altura no retângulo: " +retangulo.Tamanhoaltura());
+    System.out.println("Tamanho da base no retângulo: " +retangulo.Tamanhobase());
     System.out.println("Perímetro do retângulo: " + retangulo.calculoPerimetro());
     System.out.println("Área do retângulo: " + retangulo.calculoArea());
     
