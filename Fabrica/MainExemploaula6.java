@@ -31,10 +31,10 @@ public class MainExemploaula6
         //EXEMPLO DE 3 ALUNOS SE PASSOU OU NÃO NA MÉDIA COM 2 PROVAS:
         
         int[][] alunos = new int [3][2];
-        alunos[0][0] = 2;
-        alunos[0][1] = 3;
+        alunos[0][0] = 7;
+        alunos[0][1] = 10;
         
-        alunos[1][0] = 6;
+        /*alunos[1][0] = 6;
         alunos[1][1] = 8;
         
         alunos[2][0] = 5;
@@ -53,6 +53,10 @@ public class MainExemploaula6
                 System.out.println("Aluno "+i+" não passou");
         }
          //i = i + 1 
+        }*/
+        
+        
+        
         }
     }
 }
