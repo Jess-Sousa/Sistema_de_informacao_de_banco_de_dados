@@ -79,7 +79,7 @@ public class Grupos
         }
         
         finally {
-         System.out.println("valores de a e b respectivamente: ");
+         System.out.println("valores de a e b são esses respectivamente: ");
         }
  }
 }
