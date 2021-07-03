@@ -2,11 +2,35 @@ package TrabalhoPratico4;
 
 
 
-public class Exceptions
-{
-/*
- * 
- *
+public class Exception extends Grupos {
+  
+    public static void main  (String [] args)  {
+    
+    int[] a ={12,15,16,18,20,22,24,26,28,0};
+    int[] b = {2,3,0,2,5,5,3,0,2,30};
+    
+    for (int i=0; i<a.length; i++){
+        try{
+        if (a[i] +=0){
+        //nova exception
+        throw new Exception("Resultado Nulo devido ao resultado ser 0");
+        }
+        System.out.println(a[i] + "/" + b[i] + "="+ (a[i]/b[i]));
+        }
+        catch(ArithmeticException e){
+        System.out.println("Erro ao dividir por zero");
+        }   
+        //catch (ExcecaoDivisaoResultadoZero){
+        // System.out.println("Resultado Nulo devido ao resultado ser 0"); 
+        }
+    }
+    }
+
+    
+
+
+
+/* PosicaoA/B.setArrayANaPosicao(10,0); posicao erro
  Objetivo: Praticar conceitos de Exceções (throws, try-catch,
  Criar sua Própria Exceção) e Verificação de Entradas 
 
@@ -44,5 +68,5 @@ pode ser lançada no item 3. Logo, use aqui o bloco try-catch-finally.
 No caso do finally, você deve usar para imprimir os valores (a e b) que 
 foram usados na divisão
 */
-}
+
 

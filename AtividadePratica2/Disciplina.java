@@ -7,7 +7,7 @@ import java.util.*;
     
    public void inserirAluno(Aluno novoAluno, int  posicao) {
    //novoAluno.calculaNotas();
-		
+        
    Aluno [posicao] = novoAluno;
    }
   
