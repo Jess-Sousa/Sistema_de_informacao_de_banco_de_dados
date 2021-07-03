@@ -1,34 +1,52 @@
 package TrabalhoPratico4;
 
 
-
-public class Exception extends Grupos {
+public class Exceptions{
+    
+ public static void main (String [] args){
+        
+    Grupos PosicaoA = new Grupos();
+    PosicaoA.setArrayANaPosicao(0,12);
+    PosicaoA.setArrayANaPosicao(1,14);
+    PosicaoA.setArrayANaPosicao(2,16);
+    PosicaoA.setArrayANaPosicao(3,18);
+    PosicaoA.setArrayANaPosicao(4,20);
+    PosicaoA.setArrayANaPosicao(5,22);
+    PosicaoA.setArrayANaPosicao(6,24);   
+    PosicaoA.setArrayANaPosicao(7,26);
+    PosicaoA.setArrayANaPosicao(8,28);
+    PosicaoA.setArrayANaPosicao(9,0);
   
-    public static void main  (String [] args)  {
-    
-    int[] a ={12,15,16,18,20,22,24,26,28,0};
-    int[] b = {2,3,0,2,5,5,3,0,2,30};
-    
-    for (int i=0; i<a.length; i++){
-        try{
-        if (a[i] +=0){
-        //nova exception
-        throw new Exception("Resultado Nulo devido ao resultado ser 0");
-        }
-        System.out.println(a[i] + "/" + b[i] + "="+ (a[i]/b[i]));
-        }
-        catch(ArithmeticException e){
-        System.out.println("Erro ao dividir por zero");
-        }   
-        //catch (ExcecaoDivisaoResultadoZero){
-        // System.out.println("Resultado Nulo devido ao resultado ser 0"); 
-        }
+    Grupos PosicaoB = new Grupos();
+  
+    PosicaoB.setArrayANaPosicao(0,2);
+    PosicaoB.setArrayANaPosicao(1,3);
+    PosicaoB.setArrayANaPosicao(2,0);
+    PosicaoB.setArrayANaPosicao(3,2);
+    PosicaoB.setArrayANaPosicao(4,5);
+    PosicaoB.setArrayANaPosicao(5,5);
+    PosicaoB.setArrayANaPosicao(6,3);
+    PosicaoB.setArrayANaPosicao(7,0);
+    PosicaoB.setArrayANaPosicao(8,2);
+    PosicaoB.setArrayANaPosicao(9,30);
     }
-    }
+}
 
+/*public class Exceptions extends Grupos {
+  
+    private int a;
+    private int b;
     
-
-
+    public Exceptions (int a, int b){
+    super();
+    this.a = a;
+    this.b = b;
+    
+}
+@Override 
+public String toString(){
+return "ExcecaoDivisaoResultadoZero []";
+}
 
 /* PosicaoA/B.setArrayANaPosicao(10,0); posicao erro
  Objetivo: Praticar conceitos de Exceções (throws, try-catch,
