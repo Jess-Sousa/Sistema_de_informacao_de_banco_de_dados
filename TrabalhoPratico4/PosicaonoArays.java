@@ -1,7 +1,7 @@
 package TrabalhoPratico4;
 
 
-public class Exceptions{
+public class PosicaonoArays extends Grupos{
     
  public static void main (String [] args){
         

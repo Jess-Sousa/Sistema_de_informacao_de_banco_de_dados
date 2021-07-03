@@ -22,11 +22,11 @@ public class Grupos
     return ArrayB[posicao];
  }
     
-    public void setArrayANaPosicao(int valor, int posicao){
+    public void setArrayANaPosicao(int posicao, int valor){
     this.ArrayA[posicao]= valor; 
  }
     
-    public void setArrayBNaPosicao(int valor, int posicao){
+    public void setArrayBNaPosicao(int posicao, int valor){
     this.ArrayB[posicao]= valor; 
  }
     
@@ -61,28 +61,26 @@ public class Grupos
     
     for (int i=0; i<a.length; i++){
         try{
+            
         if (a[i] == 0){
         //nova exception
         throw new Exception("ExcecaoDivisaoResultadoZero");
         }
+        
         System.out.println(a[i] + "/" + b[i] + "="+ (a[i]/b[i]));
         }
+        
         catch(ArithmeticException e){
         System.out.println("Erro ao dividir por zero");
-        }   
+        } 
+        
          catch(Exception e){
         System.out.println("Resultado Nulo devido ao resultado ser 0");
         }
-    }
+        
+        finally {
+         System.out.println("valores de a e b respectivamente: ");
+        }
  }
 }
-
-/*
- * 
- 
-   
 }
-    
-        // catch (Throwable e){
-        // System.out.println(Ocorreu um erro); e
-*/
