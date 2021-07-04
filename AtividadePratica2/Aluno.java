@@ -8,7 +8,8 @@ public class Aluno {
         protected double nota1;
         protected double nota2;
         protected boolean status;
-        
+        Aluno[] aluno = new Aluno [10];
+
  
         public Aluno ( String nome,String id, double nota1, double nota2,
                 double media, boolean status) {
@@ -44,23 +45,24 @@ public class Aluno {
             return id;
             }
 
-        public double getNota1(){
+        public double getnota1(){
             return nota1;
             }
 
-        public void setNota1 (double Nota1){
-            this.nota1 = Nota1;
+        public void setnota1 (double nota1){
+            this.nota1 = nota1;
             }
 
-        public double getNota2(){
+        public double getnota2(){
             return nota2;
             }
 
-        public void setNota2(double Nota2){
-            this.nota2 = Nota2;
+        public void setnota2(double nota2){
+            this.nota2 = nota2;
             }
 
         public double getMedia(){
+            calculaMedia();
             return media;
             }
 
@@ -76,17 +78,16 @@ public class Aluno {
             this.status = Status; 
             }
             
-        //@SuppressWarnings("unused")
-        private double calcularMedia(){
+         private void calculaMedia() {
+	    media = (nota1+nota2)/2;   
+        }     
+
+        public boolean passou(){
             media = (nota1 + nota2)/2;
-            if (media >= 7.0);
-            System.out.println("Status: true");
-            if (media <= 6.99);
-            System.out.println("Status: false");
-
-            return media;
-           }
-        
+            if (media >= 7.0)
+            return true;
+            else
+            return false;
+    
         }
-
-        
+   }
