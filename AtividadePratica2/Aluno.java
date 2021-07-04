@@ -21,8 +21,8 @@ public class Aluno {
             }// fim do construtor*/ 
 
         public  void  imprimeNome () {
-     System.out.println("nome");
-    }
+        System.out.println("nome");
+        }
     
         public void setNome (String nome) {
             this.nome = nome;
@@ -31,9 +31,11 @@ public class Aluno {
         public String getNome () {
             return nome;
         }
+        
         public  void  imprimeId () {
-     System.out.println("id");
-    }
+        System.out.println("id");
+        }
+        
         public void setId ( String id) {
             this.id = id; 
             }
@@ -73,7 +75,7 @@ public class Aluno {
         public void setStatus(boolean Status) {
             this.status = Status; 
             }
-
+            
         //@SuppressWarnings("unused")
         private double calcularMedia(){
             media = (nota1 + nota2)/2;
