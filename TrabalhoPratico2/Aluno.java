@@ -1,14 +1,14 @@
 package TrabalhoPratico2;
 
     public  class  Aluno {
-	private  String nome;
-	private int id;
-	private double media;
-	protected  double nota1;
-	protected  double nota2;
-	protected boolean status;
-	
-	public Aluno ( String nome,int id, double nota1, double nota2,
+    private  String nome;
+    private int id;
+    private double media;
+    protected  double nota1;
+    protected  double nota2;
+    protected boolean status;
+    
+    public Aluno ( String nome,int id, double nota1, double nota2,
                 double media, boolean status) {
             this.nome=nome;
             this.id= id;
@@ -19,8 +19,8 @@ package TrabalhoPratico2;
             }// fim do construtor*/ 
          
         public Aluno() {
-	
-	}
+    
+    }
 
         public  void  imprimeNome () {
         System.out.println("nome");
@@ -74,7 +74,7 @@ package TrabalhoPratico2;
             return status;
             }
             
-	public boolean status(){
+    public boolean status(){
             media = (nota1 + nota2)/2;
             if (media >= 7.0)
             return true;

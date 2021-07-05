@@ -3,7 +3,7 @@ package TrabalhoPratico2;
 public class Teste
 {
     public  static  void  main ( String [] args ) {
-		
+        
     Aluno aluno1 = new Aluno ();
     aluno1.setNome ( "Yunna" );
     aluno1.setId (123);
@@ -83,9 +83,9 @@ public class Teste
     aluno10.nota2 = 5.0;
     System.out.println(aluno10.getMedia ());
     System.out.println( " Status: " + aluno10.status ());
-	
+    
     Disciplina disciplina =  new  Disciplina ();
-	
+    
     disciplina.adicionarAluno (aluno1, 0 );
     disciplina.adicionarAluno (aluno2, 1 );
     disciplina.adicionarAluno (aluno3, 2 );
@@ -96,7 +96,7 @@ public class Teste
     disciplina.adicionarAluno (aluno8, 7 );
     disciplina.adicionarAluno (aluno9, 8 );
     disciplina.adicionarAluno (aluno10,9 );
-	
+    
     int numAlunos = 10;
         double[] nota1 = new double[numAlunos];
         nota1[0]=8.1;
@@ -133,43 +133,54 @@ public class Teste
         media [7] = (nota1[7] + nota2[7])/2;
         media [8] = (nota1[8] + nota2[8])/2;
         media [9] = (nota1[9] + nota2[9])/2;
-
+        
+        System.out.println ( " ------ " );
+        disciplina . imprimeSucessorEAntecessor ( 0 );
         System.out.println("Média da aluna Yunna: "  +media [0]);
+        
+        System.out.println( " ------ " );
+        disciplina . imprimeSucessorEAntecessor ( 1 );
         System.out.println("Média do aluno Pedro: "  +media [1]);
+        
+        System.out.println( " ------ " );
+        disciplina . imprimeSucessorEAntecessor ( 2 );
         System.out.println("Média da aluna Solar: "  +media [2]);
+        
+        System.out.println( " ------ " );
+        disciplina . imprimeSucessorEAntecessor ( 3 );
         System.out.println("Média do aluno Lucas: "  +media [3]);
+        
+        System.out.println( " ------ " );
+        disciplina . imprimeSucessorEAntecessor ( 4 );
         System.out.println("Média da aluna Hanna: "  +media [4]);
+        
+        System.out.println( " ------ " );
+        disciplina . imprimeSucessorEAntecessor ( 5 );
         System.out.println("Média do aluno Calleb: " +media [5]);
+        
+        System.out.println( " ------ " );
+        disciplina . imprimeSucessorEAntecessor ( 6 );
         System.out.println("Média da aluna Lauren: " +media [6]);
+        
+        System.out.println( " ------ " );
+        disciplina . imprimeSucessorEAntecessor ( 7 );
         System.out.println("Média do aluno Noah: " +media [7]);
+        
+        System.out.println( " ------ " );
+        disciplina . imprimeSucessorEAntecessor ( 8 );
         System.out.println("Média da aluna Maya: " +media [8]);
+        
+        System.out.println( " ------ " );
+        disciplina . imprimeSucessorEAntecessor ( 9  );
         System.out.println("Média do aluno Jackie Li: " +media [9]);
         
+        System.out.println( " ------ " );
+       
         System.out.println( " Média da Turma Nota1: "  + disciplina . getMediaNota1 ());
-		
-        System.out.println( " Média da Turma Nota2: "  + disciplina . getMediaNota2 ());
- 
         
-    System.out.println ( " ------ " );
-    disciplina . imprimeSucessorEAntecessor ( 0 );
-    System.out.println( " ------ " );
-    disciplina . imprimeSucessorEAntecessor ( 1 );
-    System.out.println( " ------ " );
-    disciplina . imprimeSucessorEAntecessor ( 2 );
-    System.out.println( " ------ " );
-    disciplina . imprimeSucessorEAntecessor ( 3 );
-    System.out.println( " ------ " );
-    disciplina . imprimeSucessorEAntecessor ( 4 );
-    System.out.println( " ------ " );
-    disciplina . imprimeSucessorEAntecessor ( 5 );
-    System.out.println( " ------ " );
-    disciplina . imprimeSucessorEAntecessor ( 6 );
-    System.out.println( " ------ " );
-    disciplina . imprimeSucessorEAntecessor ( 7 );
-    System.out.println( " ------ " );
-    disciplina . imprimeSucessorEAntecessor ( 8 );
-    System.out.println( " ------ " );
-    disciplina . imprimeSucessorEAntecessor ( 9  );
+        System.out.println( " ------ " );
+        
+        System.out.println( " Média da Turma Nota2: "  + disciplina . getMediaNota2 ());
 }
 }
 
