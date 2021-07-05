@@ -148,7 +148,7 @@ public class Teste
         System.out.println( " Média da Turma Nota1: "  + disciplina . getMediaNota1 ());
 		
         System.out.println( " Média da Turma Nota2: "  + disciplina . getMediaNota2 ());
-
+ 
         
     System.out.println ( " ------ " );
     disciplina . imprimeSucessorEAntecessor ( 0 );

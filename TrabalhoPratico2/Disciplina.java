@@ -60,7 +60,7 @@ public class Disciplina
 	}else {
 	System.out.println("Sucessor da posição: "+aluno[posicao+1].getNome());
 	}		
-       }
+       } 
     }
 
         

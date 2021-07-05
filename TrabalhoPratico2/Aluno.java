@@ -60,7 +60,7 @@ package TrabalhoPratico2;
 
         public void setnota2(double nota2){
             this.nota2 = nota2;
-            }
+            } 
 
         public double getMedia(){
             return media;
