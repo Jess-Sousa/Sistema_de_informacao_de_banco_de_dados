@@ -4,7 +4,6 @@ package TrabalhoPratico2;
 
 public class Disciplina
 {
-	// Aluno [] aluno =  new  Aluno [ 10 ];
 	 Aluno [] aluno =   new Aluno [10];
 	 
 	public  void  adicionarAluno ( Aluno  alunoNovo , int  posicao ) {
@@ -49,19 +48,19 @@ public class Disciplina
         }
 		
 	if(posicao -1 < 0) {
-	System.out.println("Não existe antecessor");
+	System.out.println("Não existe antecessor acima");
 	}else if (aluno[posicao-1] == null) {
-	System.out.println("Nessa posição, não tem aluno");
+	System.out.println("posição inexistente");
 	}else {
-	System.out.println("Antecessor: "+aluno[posicao-1].getNome());
+	System.out.println("Antecessor da posição: "+aluno[posicao-1].getNome());
 	}
 		
 	if(posicao+1 > 9) {
-	System.out.println("Não existe sucessor");
+	System.out.println("Não existe sucessor abaixo");
 	}else if (aluno[posicao+1] == null) {
-	System.out.println("Nessa posição, não tem aluno");
+	System.out.println("posição inexistente");
 	}else {
-	System.out.println("Sucessor: "+aluno[posicao+1].getNome());
+	System.out.println("Sucessor da posição: "+aluno[posicao+1].getNome());
 	}		
        }
     }

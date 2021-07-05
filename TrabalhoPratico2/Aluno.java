@@ -63,7 +63,6 @@ package TrabalhoPratico2;
             }
 
         public double getMedia(){
-            //calculaMedia();
             return media;
             }
 

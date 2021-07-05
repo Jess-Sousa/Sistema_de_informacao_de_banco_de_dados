@@ -2,18 +2,6 @@ package TrabalhoPratico2;
 
 public class Teste
 {
-	Aluno[] aluno = new Aluno [10];
-        Aluno[] aluno1 = new Aluno[0];
-        Aluno[] aluno2 = new Aluno[1];
-        Aluno[] aluno3 = new Aluno[2];
-        Aluno[] aluno4 = new Aluno[3];
-        Aluno[] aluno5 = new Aluno[4];
-        Aluno[] aluno6 = new Aluno[5];
-        Aluno[] aluno7 = new Aluno[6];
-        Aluno[] aluno8 = new Aluno[7];
-        Aluno[] aluno9 = new Aluno[8];
-        Aluno[] aluno10= new Aluno[9];
-   
     public  static  void  main ( String [] args ) {
 		
     Aluno aluno1 = new Aluno ();
