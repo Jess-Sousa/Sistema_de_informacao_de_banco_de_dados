@@ -1,7 +1,5 @@
 package TrabalhoPratico2;
 
-
-
 public class Disciplina
 {
 	 Aluno [] aluno =   new Aluno [10];
